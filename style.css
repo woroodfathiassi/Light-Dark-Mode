@@ -1,0 +1,138 @@
+*{
+    margin: 0px;
+    padding: 0px;
+}
+
+body {
+    background-color: white;
+    color: black;
+}
+
+body.dark-mode {
+    background-color: rgb(93, 93, 93);
+    color: white;
+}
+
+header{
+    padding: 25px;
+    display: flex;
+    background-color: salmon;
+    justify-content: space-between;
+    overflow: hidden;
+    align-items: center;
+    font-size: 20px;
+}
+
+header.dark-mode{
+    background-color: rgb(99, 40, 33);
+    color: white;
+}
+
+header .navBar a{
+    text-decoration: none;
+    color: black;
+    margin-right: 15px;
+}
+
+header .navBar a.dark-mode{
+    color: white;
+}
+
+header span{
+    font-family: fantasy;
+}
+
+main #intro{
+    width: 90%;
+    margin: 50px auto;
+}
+
+h1{
+    font-size: 40px;
+    margin-bottom: 20px;
+}
+
+main #tabs{
+    width: 80%;
+    margin: 20px auto;
+}
+
+main #tabs ul{
+    display: flex;
+    justify-content: space-between;
+}
+
+main #tabs div{
+    padding: 15px;
+    border: 1px solid rgb(235, 232, 232);   
+}
+main #tabs div.dark-mode{
+    border: 1px solid rgb(142, 71, 63);;   
+}
+
+.ui-tabs li {
+    list-style: none;
+    font-size: 20px;
+    width: calc(100% / 3);
+    text-align: center;
+    margin: 20px 0px;
+}
+
+.ui-tabs li a{
+    text-decoration: none;
+    font-weight: bold;
+    color: black;
+    transition: .4s;
+}
+
+.ui-tabs li a:hover{
+    color: firebrick;
+    font-size: 21px;
+}
+
+.ui-tabs li a.dark-mode{
+    color: white;
+}
+
+.ui-tabs li a.dark-mode:hover{
+    color: rgb(247, 161, 161);
+}
+
+#tabs-1, #tabs-2, #tabs-3{
+    align-items: center;
+    box-shadow: 0 4px 6px -1px rgba(247, 209, 209, 0.759), 0 2px 4px -1px rgba(0, 0, 0, 0.06);
+}
+
+footer{
+    position: fixed;
+    bottom: 0px;
+    width: 100%;
+    background: #f1f1f1;
+    padding: 1rem 3rem;
+}
+
+footer.dark-mode{
+    background-color: #434343;
+    color: white
+}
+
+#about p{
+    width: 70vw;
+}
+
+button { 
+    background-image: url('night.png'); 
+    background-size: cover; 
+    width: 30px; 
+    height: 30px; 
+    background-color: transparent;
+    border: none;
+} 
+
+button:hover{
+    cursor: pointer;
+}
+
+button.dark-mode{
+    background-image: url('sun.png');
+}
