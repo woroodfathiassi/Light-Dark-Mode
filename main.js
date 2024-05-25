@@ -1,18 +1,21 @@
-$(document).ready(function() {
-    $( function() {
-        var tabs = $( "#tabs" ).tabs();
-    } );
+document.addEventListener("DOMContentLoaded", function() {
 
-    $('#toggle-button').click(function() {
-        $('body').toggleClass('dark-mode');
-        $('header').toggleClass('dark-mode');
-        $('button').toggleClass('dark-mode');
-        $('header .navBar a').toggleClass('dark-mode');
-        $('main #tabs div').toggleClass('dark-mode');
-        $('.ui-tabs li a').toggleClass('dark-mode');
-        $('main #tabs div').toggleClass('dark-mode');
-        $('footer').toggleClass('dark-mode');
+    let tabs = document.getElementsByClassName('tab');
+    Array.from(tabs).forEach(function(tab) {
+        tab.addEventListener('click', function(e) {
+            let currentTab = tab.getAttribute('href');
+            Array.from(document.getElementsByClassName('tabContent')).forEach(function(content) {
+                content.style.display = 'none'; 
+            });
+            document.querySelector(currentTab).style.display = 'block';
+        });
     });
-    
-});
 
+    if (tabs.length > 0) {
+        tabs[0].click();
+    }
+
+    document.getElementById('toggleButton').addEventListener('click', function() {
+        document.body.classList.toggle('dark-mode');
+    });
+});

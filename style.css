@@ -23,7 +23,7 @@ header{
     font-size: 20px;
 }
 
-header.dark-mode{
+body.dark-mode header{
     background-color: rgb(99, 40, 33);
     color: white;
 }
@@ -34,7 +34,7 @@ header .navBar a{
     margin-right: 15px;
 }
 
-header .navBar a.dark-mode{
+body.dark-mode header .navBar a{
     color: white;
 }
 
@@ -42,7 +42,7 @@ header span{
     font-family: fantasy;
 }
 
-main #intro{
+#intro{
     width: 90%;
     margin: 50px auto;
 }
@@ -52,25 +52,25 @@ h1{
     margin-bottom: 20px;
 }
 
-main #tabs{
+#tabs{
     width: 80%;
     margin: 20px auto;
 }
 
-main #tabs ul{
+#tabs ul{
     display: flex;
     justify-content: space-between;
 }
 
-main #tabs div{
+#tabs div{
     padding: 15px;
     border: 1px solid rgb(235, 232, 232);   
 }
-main #tabs div.dark-mode{
+body.dark-mode #tabs div{
     border: 1px solid rgb(142, 71, 63);;   
 }
 
-.ui-tabs li {
+#tabs li {
     list-style: none;
     font-size: 20px;
     width: calc(100% / 3);
@@ -78,29 +78,33 @@ main #tabs div.dark-mode{
     margin: 20px 0px;
 }
 
-.ui-tabs li a{
+#tabs li a{
     text-decoration: none;
     font-weight: bold;
     color: black;
     transition: .4s;
 }
 
-.ui-tabs li a:hover{
+#tabs li a:hover{
     color: firebrick;
     font-size: 21px;
 }
 
-.ui-tabs li a.dark-mode{
+body.dark-mode #tabs li a{
     color: white;
 }
 
-.ui-tabs li a.dark-mode:hover{
+body.dark-mode #tabs li a:hover{
     color: rgb(247, 161, 161);
 }
 
-#tabs-1, #tabs-2, #tabs-3{
+#tabs1, #tabs2, #tabs3{
+    display: none;
     align-items: center;
     box-shadow: 0 4px 6px -1px rgba(247, 209, 209, 0.759), 0 2px 4px -1px rgba(0, 0, 0, 0.06);
+}
+#tabs1 p, #tabs2 p, #tabs3 p{
+    margin-bottom: 20px;
 }
 
 footer{
@@ -111,7 +115,7 @@ footer{
     padding: 1rem 3rem;
 }
 
-footer.dark-mode{
+body.dark-mode footer{
     background-color: #434343;
     color: white
 }
@@ -133,6 +137,6 @@ button:hover{
     cursor: pointer;
 }
 
-button.dark-mode{
+body.dark-mode button{
     background-image: url('sun.png');
 }
