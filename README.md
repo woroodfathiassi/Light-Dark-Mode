@@ -2,4 +2,5 @@
 - This is a simple application to switch a page's theme between Light and Dark modes.
 
 - show it:
-  * https://6651a86a9bc1772496887724--jolly-custard-139b5a.netlify.app/
+  * [ from here. ]( https://66523abe9c181f9f568e1555--jolly-custard-139b5a.netlify.app/#tabs1 )
+ 
